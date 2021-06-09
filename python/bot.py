@@ -25,7 +25,6 @@ def discord_code():
     automatic_trainer.train("chatterbot.corpus.english")
     list_trainer.train("./train.yml")
 
-    token = 'ODUwODg3ODQxNjU1NTU0MDg4.YLwRDg.vNQtk1O-2Go9wYPsZiRgYafq4-M'
     varx = commands.Bot(command_prefix = ">")
     menu = DefaultMenu("\U0001F44D", "👎", ":discord:743511195197374563")
     varx.help_command = PrettyHelp(navigation=menu, color=discord.Colour.blue())
