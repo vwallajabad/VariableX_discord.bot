@@ -1,15 +1,16 @@
-import discord
-import random
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
-from chatterbot.trainers import ChatterBotCorpusTrainer
-from keep_alive import keep_alive
-from pretty_help import PrettyHelp
-from pretty_help import DefaultMenu
-from discord.ext import commands
-
 #defining bot
 def discord_code():
+    import discord
+    import random
+    from chatterbot import ChatBot
+    from chatterbot.trainers import ListTrainer
+    from chatterbot.trainers import ChatterBotCorpusTrainer
+    from keep_alive import keep_alive
+    from pretty_help import PrettyHelp
+    from pretty_help import DefaultMenu
+    from discord.ext import commands
+    import os
+    token = os.environ['token']
     bot = ChatBot("Variable X",
                   storage_adapter='chatterbot.storage.SQLStorageAdapter',
                   logic_adapters=[{
